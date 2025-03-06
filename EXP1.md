@@ -16,18 +16,23 @@ Cases
 ### Program:
 
 a)do...while :
+
 ![Screenshot 2025-03-06 091213](https://github.com/user-attachments/assets/af3df771-55ec-4c2a-97b6-c3ff722a9343)
 
 b)while...do :
+
 ![Screenshot 2025-03-06 091324](https://github.com/user-attachments/assets/93d6a13b-a479-4a54-ab5a-0e6f5757a531)
 
 c)switch :
+
 ![Screenshot 2025-03-06 091432](https://github.com/user-attachments/assets/9b9a26a2-6b23-461c-84e1-236b9decccf3)
 
 d) if..else : 
+
 ![Screenshot 2025-03-06 091522](https://github.com/user-attachments/assets/1dc872a4-1e9c-4553-891f-cdf6bb21fdbb)
 
 e) for: 
+
 ![Screenshot 2025-03-06 091617](https://github.com/user-attachments/assets/2e1444cd-0ae6-447d-9998-30ae36c0d2ab)
 
 ### Output:
