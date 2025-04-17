@@ -17,24 +17,20 @@ Write a python program to check the number is Armstrong number or not and inspec
 
 ### Program:
 ```
-x = input("Give an input: ")
+number = int(input("Enter a number: "))
+sum = 0
+num = number
 
-if x.isnumeric():
-    x = int(x)
-    temp = x
-    cube = 0
+while num > 0:
+    current_digit = num % 10
+    sum += current_digit ** 3
+    num //= 10
 
-    while temp > 0:     
-        digit = temp % 10
-        cube += digit ** 3
-        temp //= 10
-
-    if cube == x:
-        print("Armstrong number")
-    else:
-        print("Not an Armstrong number")
+if sum == number:
+    print("It is an Armstrong Number.")
 else:
-    print("Enter a Positive Integer.")
+    print("It is not an Armstrong Number.")
+
 ```
 
 
