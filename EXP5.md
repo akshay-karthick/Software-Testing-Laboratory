@@ -22,7 +22,6 @@ Write a program in Python language to search a given element is present in the l
 
 ---
 
-Let me know if you need this in a different format like a flowchart or table!
 
 ### Program:
 ```
