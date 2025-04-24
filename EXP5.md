@@ -1,36 +1,56 @@
+# Ex.No: 5 To search a given element is present in the list using Binary search and introspect the causes for its failure
+### DATE : 24/04/2025
+### REG.NO : 212224230015
+### NAME : AKSHAY KARTHICK ASR
 ### AIM: 
-Write a python program to check the number is Armstrong number or not and inspect for failures.
+Write a program in Python language to search a given element is present in the list using Binary search. Introspect the causes for its failure and write down the possible reasons for its failure.
 
 ### Algorithm:
 
-1.  Start the program.
-2.	Read an integer input number.
-3.	Initialize the variables current_digit, sum = 0, and num = number.
-4.	Repeat Steps 5 to 7 until num > 0
-5.	current_digit = (num % 10).
-6.	sum = sum + (current_digit * current_digit * current_digit). 7. Stop the program.
-7.	num = num / 10.
-8.	Check if sum == number. If true, print "It is an Armstrong Number." Otherwise, print "It is not an Armstrong Number."
-9.	Stop the program.
+---
+1. Start the program
+2. Set `low = 0` (first index)  
+3. Set `high = length of arr - 1` (last index)  
+4. Repeat while `low` is less than or equal to `high`  
+ a. Set `mid = (low + high) // 2`  
+ b. If `arr[mid] == x`, return `True`  
+ c. Else if `arr[mid] < x`, set `low = mid + 1`  
+ d. Else set `high = mid - 1`  
+5.End loop  
+6. Return `False` (element not found)  
+7. Stop the program
+
+---
+
+Let me know if you need this in a different format like a flowchart or table!
 
 ### Program:
+```
+def binary_search(arr, x):
+    low = 0
+    high = len(arr) - 1
+    while low <= high:
+        mid = (low + high) // 2
+        if arr[mid] == x:
+            return True
+        elif arr[mid] < x:
+            low = mid + 1
+        else:
+            high = mid - 1
+    return False
 
-
-
-
-
-
-
-
-
-
-
-
-
+arr = [2, 4, 6, 8, 10, 12]
+x = int(input("Enter the target:"))
+if binary_search(arr, x):
+    print("Element found")
+else:
+    print("Element not found")
+```
 ### Output:
+![image](https://github.com/user-attachments/assets/f7e58ff4-958f-4769-a70c-038c3529995e)
 
 
 
 ### Result:
-Thus, the python program to check the number is Armstrong number or not implemented and the output is verified successfully.
+Thus, the python program to search a given element is present in the list using Binary search and the output is verified successfully.
 
