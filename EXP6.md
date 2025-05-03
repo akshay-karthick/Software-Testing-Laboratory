@@ -1,7 +1,7 @@
 # Ex.No: 6 To check whether the string is Palindrome and generate test cases.
 
-### DATE:                                                                            
-### REGISTER NUMBER : 
+### DATE: 03-05-2025                                                                            
+### REGISTER NUMBER : 212224230015
 ### AIM: 
 Write a Python program to check whether the string is Palindrome and generate test cases. 
 ### Algorithm:
@@ -13,6 +13,18 @@ Write a Python program to check whether the string is Palindrome and generate te
 6. Else, return that it is not a palindrome. 
 7. Stop the program.
 ### Program:
+```
+ def is_palindrome(s):
+    s = s.lower().replace(" ", "")
+    return s == s[::-1]
+
+string = input("Enter a string: ")
+if is_palindrome(string):
+    print("The string is a palindrome.")
+else:
+    print("The string is not a palindrome.")
+
+```
 
 
 
@@ -26,6 +38,7 @@ Write a Python program to check whether the string is Palindrome and generate te
 
 
 ### Output:
+![image](https://github.com/user-attachments/assets/82cb4f31-e9c5-4f9e-a274-f3abf4ee45e5)
 
 
 
