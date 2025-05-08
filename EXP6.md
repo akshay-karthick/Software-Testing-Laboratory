@@ -14,15 +14,18 @@ Write a Python program to check whether the string is Palindrome and generate te
 7. Stop the program.
 ### Program:
 ```
- def is_palindrome(s):
-    s = s.lower().replace(" ", "")
-    return s == s[::-1]
+def is_palindrome(s):
+    for i in range(len(s) // 2):
+        if s[i] != s[-(i + 1)]:
+            return False
+    return True
 
-string = input("Enter a string: ")
-if is_palindrome(string):
+input_str = input("Enter a string: ")
+if is_palindrome(input_str):
     print("The string is a palindrome.")
 else:
     print("The string is not a palindrome.")
+
 
 ```
 
